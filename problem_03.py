@@ -37,7 +37,23 @@ Contracheque
 
 
 def main():
-    pass # your code here
+     main()def main():
+    print("Programa Simples de Pagamento")
+    
+    horas_trabalhadas = float(input("Informe quantas horas você trabalhou: "))
+    valor_hora = 25.00
+    imposto = 0.125
+    
+    salario_bruto = valor_hora * horas_trabalhadas
+    impostos_a_cobrar = salario_bruto * imposto
+    salario_liquido = salario_bruto - impostos_a_cobrar
+    
+    print("Contra cheque")
+    print(f"    Horas trabalhadas: {horas_trabalhadas}")
+    print(f"    Valor da Hora: R${valor_hora:.2f}")
+    print(f"    Salário Bruto: R${salario_bruto:.2f}")
+    print(f"    Imposto: R${impostos_a_cobrar:.2f}")
+    print(f"    Salário Líquido: R${salario_liquido:.2f}")
 
 
 if __name__ == '__main__':
