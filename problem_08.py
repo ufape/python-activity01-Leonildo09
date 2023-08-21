@@ -32,7 +32,14 @@ Detectamos 4 valores positivos.
 
 
 def main():
-    pass # your code here
+     valores_positivos = 0
+
+    for i in range(1, 7):
+        valor = float(input(f"Valor ({i}/6): "))
+        if valor > 0:
+            valores_positivos += 1
+    
+    print(f"Detectamos {valores_positivos} valores positivos.")
 
 
 if __name__ == '__main__':
